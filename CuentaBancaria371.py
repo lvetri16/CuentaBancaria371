@@ -28,10 +28,7 @@ class Cuenta:
         self._cantidad -= cantidad
 
     def mostrar_datos(self):
-        datos = "Datos de la cuenta:\n"
-        datos += "Persona: {}\n".format(self._persona)
-        datos += "Cantidad: {}\n".format(self._cantidad)
-        return datos
+        return f"Datos de la cuenta:\nPersona: {self._persona}\nCantidad: {self._cantidad}\n"
 
 cuenta = Cuenta()
 cuenta.persona = "Juan"

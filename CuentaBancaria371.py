@@ -19,3 +19,16 @@ class Cuenta:
     def cantidad(self, cantidad):
         if cantidad >= 0:
             self._cantidad = cantidad
+            
+    def ingresar_cantidad(self, cantidad):
+        if cantidad > 0:
+            self._cantidad += cantidad
+    
+    def retirar_cantidad(self, cantidad):
+        self._cantidad -= cantidad
+
+    def mostrar_datos(self):
+        datos = "Datos de la cuenta:\n"
+        datos += "Persona: {}\n".format(self._persona)
+        datos += "Cantidad: {}\n".format(self._cantidad)
+        return datos

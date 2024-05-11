@@ -32,3 +32,10 @@ class Cuenta:
         datos += "Persona: {}\n".format(self._persona)
         datos += "Cantidad: {}\n".format(self._cantidad)
         return datos
+
+cuenta = Cuenta()
+cuenta.persona = "Juan"
+cuenta.cantidad = 1000
+cuenta.ingresar_cantidad(500)
+cuenta.retirar_cantidad(600)
+print(cuenta.mostrar_datos())
